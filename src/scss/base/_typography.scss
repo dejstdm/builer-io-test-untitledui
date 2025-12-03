@@ -4,11 +4,350 @@
 @use "../utils/variables" as *;
 
 // ==========================================================================
+// Mixins for Typography Scales
+// ==========================================================================
+
+// Display 2xl variants
+@mixin display-2xl-regular {
+  font-family: $font-primary;
+  font-size: $display-2xl-size;
+  font-weight: $font-regular;
+  line-height: $display-2xl-line-height;
+  letter-spacing: $display-2xl-letter-spacing;
+}
+
+@mixin display-2xl-medium {
+  font-family: $font-primary;
+  font-size: $display-2xl-size;
+  font-weight: $font-medium;
+  line-height: $display-2xl-line-height;
+  letter-spacing: $display-2xl-letter-spacing;
+}
+
+@mixin display-2xl-semibold {
+  font-family: $font-primary;
+  font-size: $display-2xl-size;
+  font-weight: $font-semibold;
+  line-height: $display-2xl-line-height;
+  letter-spacing: $display-2xl-letter-spacing;
+}
+
+@mixin display-2xl-bold {
+  font-family: $font-primary;
+  font-size: $display-2xl-size;
+  font-weight: $font-bold;
+  line-height: $display-2xl-line-height;
+  letter-spacing: $display-2xl-letter-spacing;
+}
+
+// Display xl variants
+@mixin display-xl-regular {
+  font-family: $font-primary;
+  font-size: $display-xl-size;
+  font-weight: $font-regular;
+  line-height: $display-xl-line-height;
+  letter-spacing: $display-xl-letter-spacing;
+}
+
+@mixin display-xl-medium {
+  font-family: $font-primary;
+  font-size: $display-xl-size;
+  font-weight: $font-medium;
+  line-height: $display-xl-line-height;
+  letter-spacing: $display-xl-letter-spacing;
+}
+
+@mixin display-xl-semibold {
+  font-family: $font-primary;
+  font-size: $display-xl-size;
+  font-weight: $font-semibold;
+  line-height: $display-xl-line-height;
+  letter-spacing: $display-xl-letter-spacing;
+}
+
+@mixin display-xl-bold {
+  font-family: $font-primary;
+  font-size: $display-xl-size;
+  font-weight: $font-bold;
+  line-height: $display-xl-line-height;
+  letter-spacing: $display-xl-letter-spacing;
+}
+
+// Display lg variants
+@mixin display-lg-regular {
+  font-family: $font-primary;
+  font-size: $display-lg-size;
+  font-weight: $font-regular;
+  line-height: $display-lg-line-height;
+  letter-spacing: $display-lg-letter-spacing;
+}
+
+@mixin display-lg-medium {
+  font-family: $font-primary;
+  font-size: $display-lg-size;
+  font-weight: $font-medium;
+  line-height: $display-lg-line-height;
+  letter-spacing: $display-lg-letter-spacing;
+}
+
+@mixin display-lg-semibold {
+  font-family: $font-primary;
+  font-size: $display-lg-size;
+  font-weight: $font-semibold;
+  line-height: $display-lg-line-height;
+  letter-spacing: $display-lg-letter-spacing;
+}
+
+@mixin display-lg-bold {
+  font-family: $font-primary;
+  font-size: $display-lg-size;
+  font-weight: $font-bold;
+  line-height: $display-lg-line-height;
+  letter-spacing: $display-lg-letter-spacing;
+}
+
+// Display md variants
+@mixin display-md-regular {
+  font-family: $font-primary;
+  font-size: $display-md-size;
+  font-weight: $font-regular;
+  line-height: $display-md-line-height;
+  letter-spacing: $display-md-letter-spacing;
+}
+
+@mixin display-md-medium {
+  font-family: $font-primary;
+  font-size: $display-md-size;
+  font-weight: $font-medium;
+  line-height: $display-md-line-height;
+  letter-spacing: $display-md-letter-spacing;
+}
+
+@mixin display-md-semibold {
+  font-family: $font-primary;
+  font-size: $display-md-size;
+  font-weight: $font-semibold;
+  line-height: $display-md-line-height;
+  letter-spacing: $display-md-letter-spacing;
+}
+
+@mixin display-md-bold {
+  font-family: $font-primary;
+  font-size: $display-md-size;
+  font-weight: $font-bold;
+  line-height: $display-md-line-height;
+  letter-spacing: $display-md-letter-spacing;
+}
+
+// Display sm variants
+@mixin display-sm-regular {
+  font-family: $font-primary;
+  font-size: $display-sm-size;
+  font-weight: $font-regular;
+  line-height: $display-sm-line-height;
+}
+
+@mixin display-sm-medium {
+  font-family: $font-primary;
+  font-size: $display-sm-size;
+  font-weight: $font-medium;
+  line-height: $display-sm-line-height;
+}
+
+@mixin display-sm-semibold {
+  font-family: $font-primary;
+  font-size: $display-sm-size;
+  font-weight: $font-semibold;
+  line-height: $display-sm-line-height;
+}
+
+@mixin display-sm-bold {
+  font-family: $font-primary;
+  font-size: $display-sm-size;
+  font-weight: $font-bold;
+  line-height: $display-sm-line-height;
+}
+
+// Display xs variants
+@mixin display-xs-regular {
+  font-family: $font-primary;
+  font-size: $display-xs-size;
+  font-weight: $font-regular;
+  line-height: $display-xs-line-height;
+}
+
+@mixin display-xs-medium {
+  font-family: $font-primary;
+  font-size: $display-xs-size;
+  font-weight: $font-medium;
+  line-height: $display-xs-line-height;
+}
+
+@mixin display-xs-semibold {
+  font-family: $font-primary;
+  font-size: $display-xs-size;
+  font-weight: $font-semibold;
+  line-height: $display-xs-line-height;
+}
+
+@mixin display-xs-bold {
+  font-family: $font-primary;
+  font-size: $display-xs-size;
+  font-weight: $font-bold;
+  line-height: $display-xs-line-height;
+}
+
+// Text xl variants
+@mixin text-xl-regular {
+  font-family: $font-primary;
+  font-size: $text-xl-size;
+  font-weight: $font-regular;
+  line-height: $text-xl-line-height;
+}
+
+@mixin text-xl-medium {
+  font-family: $font-primary;
+  font-size: $text-xl-size;
+  font-weight: $font-medium;
+  line-height: $text-xl-line-height;
+}
+
+@mixin text-xl-semibold {
+  font-family: $font-primary;
+  font-size: $text-xl-size;
+  font-weight: $font-semibold;
+  line-height: $text-xl-line-height;
+}
+
+@mixin text-xl-bold {
+  font-family: $font-primary;
+  font-size: $text-xl-size;
+  font-weight: $font-bold;
+  line-height: $text-xl-line-height;
+}
+
+// Text lg variants
+@mixin text-lg-regular {
+  font-family: $font-primary;
+  font-size: $text-lg-size;
+  font-weight: $font-regular;
+  line-height: $text-lg-line-height;
+}
+
+@mixin text-lg-medium {
+  font-family: $font-primary;
+  font-size: $text-lg-size;
+  font-weight: $font-medium;
+  line-height: $text-lg-line-height;
+}
+
+@mixin text-lg-semibold {
+  font-family: $font-primary;
+  font-size: $text-lg-size;
+  font-weight: $font-semibold;
+  line-height: $text-lg-line-height;
+}
+
+@mixin text-lg-bold {
+  font-family: $font-primary;
+  font-size: $text-lg-size;
+  font-weight: $font-bold;
+  line-height: $text-lg-line-height;
+}
+
+// Text md variants
+@mixin text-md-regular {
+  font-family: $font-primary;
+  font-size: $text-md-size;
+  font-weight: $font-regular;
+  line-height: $text-md-line-height;
+}
+
+@mixin text-md-medium {
+  font-family: $font-primary;
+  font-size: $text-md-size;
+  font-weight: $font-medium;
+  line-height: $text-md-line-height;
+}
+
+@mixin text-md-semibold {
+  font-family: $font-primary;
+  font-size: $text-md-size;
+  font-weight: $font-semibold;
+  line-height: $text-md-line-height;
+}
+
+@mixin text-md-bold {
+  font-family: $font-primary;
+  font-size: $text-md-size;
+  font-weight: $font-bold;
+  line-height: $text-md-line-height;
+}
+
+// Text sm variants
+@mixin text-sm-regular {
+  font-family: $font-primary;
+  font-size: $text-sm-size;
+  font-weight: $font-regular;
+  line-height: $text-sm-line-height;
+}
+
+@mixin text-sm-medium {
+  font-family: $font-primary;
+  font-size: $text-sm-size;
+  font-weight: $font-medium;
+  line-height: $text-sm-line-height;
+}
+
+@mixin text-sm-semibold {
+  font-family: $font-primary;
+  font-size: $text-sm-size;
+  font-weight: $font-semibold;
+  line-height: $text-sm-line-height;
+}
+
+@mixin text-sm-bold {
+  font-family: $font-primary;
+  font-size: $text-sm-size;
+  font-weight: $font-bold;
+  line-height: $text-sm-line-height;
+}
+
+// Text xs variants
+@mixin text-xs-regular {
+  font-family: $font-primary;
+  font-size: $text-xs-size;
+  font-weight: $font-regular;
+  line-height: $text-xs-line-height;
+}
+
+@mixin text-xs-medium {
+  font-family: $font-primary;
+  font-size: $text-xs-size;
+  font-weight: $font-medium;
+  line-height: $text-xs-line-height;
+}
+
+@mixin text-xs-semibold {
+  font-family: $font-primary;
+  font-size: $text-xs-size;
+  font-weight: $font-semibold;
+  line-height: $text-xs-line-height;
+}
+
+@mixin text-xs-bold {
+  font-family: $font-primary;
+  font-size: $text-xs-size;
+  font-weight: $font-bold;
+  line-height: $text-xs-line-height;
+}
+
+// ==========================================================================
 // Base Typography
 // ==========================================================================
 
 html {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: $font-primary;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -16,135 +355,352 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 400;
+  font-family: $font-primary;
+  font-weight: $font-regular;
   color: $color-black;
   line-height: 1.5;
 }
 
 // ==========================================================================
-// Headlines
+// HTML Element Defaults
 // ==========================================================================
 
-.h1, h1 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 76px;
-  margin: 0 0 16px 0;
+h1 {
+  @include display-xl-semibold;
+  margin: 0 0 1.5rem 0;
   color: $color-black;
+
+  @media (min-width: $md) {
+    @include display-2xl-semibold;
+  }
 }
 
-.h2, h2 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 44px;
-  margin: 0 0 16px 0;
+h2 {
+  @include display-lg-semibold;
+  margin: 0 0 1.25rem 0;
   color: $color-black;
+
+  @media (min-width: $md) {
+    @include display-xl-semibold;
+  }
 }
 
-.h3, h3 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 36px;
-  margin: 0 0 16px 0;
+h3 {
+  @include display-md-semibold;
+  margin: 0 0 1rem 0;
   color: $color-black;
+
+  @media (min-width: $md) {
+    @include display-lg-semibold;
+  }
 }
 
-.h4, h4 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  margin: 0 0 16px 0;
+h4 {
+  @include display-sm-semibold;
+  margin: 0 0 1rem 0;
   color: $color-black;
+
+  @media (min-width: $md) {
+    @include display-md-semibold;
+  }
 }
 
-// ==========================================================================
-// Body Text - Regular Weight
-// ==========================================================================
+h5 {
+  @include display-xs-semibold;
+  margin: 0 0 0.75rem 0;
+  color: $color-black;
 
-.body-1,
+  @media (min-width: $md) {
+    @include display-sm-semibold;
+  }
+}
+
+h6 {
+  @include text-xl-semibold;
+  margin: 0 0 0.75rem 0;
+  color: $color-black;
+
+  @media (min-width: $md) {
+    @include display-xs-semibold;
+  }
+}
+
 p {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  margin: 0 0 16px 0;
+  @include text-md-regular;
+  margin: 0 0 1rem 0;
   color: $color-black;
-}
 
-.body-2 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0 0 16px 0;
-  color: $color-black;
-}
-
-.body-3 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0 0 16px 0;
-  color: $color-black;
-}
-
-.body-4 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0 0 16px 0;
-  color: $color-black;
+  @media (min-width: $md) {
+    @include text-lg-regular;
+  }
 }
 
 // ==========================================================================
-// Body Text - Medium Weight
+// Utility Classes - Display 2xl
 // ==========================================================================
 
-.body-1-medium {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28px;
-  margin: 0 0 16px 0;
-  color: $color-black;
+.display-2xl-regular {
+  @include display-2xl-regular;
+  margin: 0;
 }
 
-.body-2-medium {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  margin: 0 0 16px 0;
-  color: $color-black;
+.display-2xl-medium {
+  @include display-2xl-medium;
+  margin: 0;
 }
 
-.body-3-medium {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin: 0 0 16px 0;
-  color: $color-black;
+.display-2xl-semibold {
+  @include display-2xl-semibold;
+  margin: 0;
 }
 
-.body-4-medium {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  margin: 0 0 16px 0;
-  color: $color-black;
+.display-2xl-bold {
+  @include display-2xl-bold;
+  margin: 0;
 }
 
 // ==========================================================================
-// Utility Classes
+// Utility Classes - Display xl
+// ==========================================================================
+
+.display-xl-regular {
+  @include display-xl-regular;
+  margin: 0;
+}
+
+.display-xl-medium {
+  @include display-xl-medium;
+  margin: 0;
+}
+
+.display-xl-semibold {
+  @include display-xl-semibold;
+  margin: 0;
+}
+
+.display-xl-bold {
+  @include display-xl-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Display lg
+// ==========================================================================
+
+.display-lg-regular {
+  @include display-lg-regular;
+  margin: 0;
+}
+
+.display-lg-medium {
+  @include display-lg-medium;
+  margin: 0;
+}
+
+.display-lg-semibold {
+  @include display-lg-semibold;
+  margin: 0;
+}
+
+.display-lg-bold {
+  @include display-lg-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Display md
+// ==========================================================================
+
+.display-md-regular {
+  @include display-md-regular;
+  margin: 0;
+}
+
+.display-md-medium {
+  @include display-md-medium;
+  margin: 0;
+}
+
+.display-md-semibold {
+  @include display-md-semibold;
+  margin: 0;
+}
+
+.display-md-bold {
+  @include display-md-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Display sm
+// ==========================================================================
+
+.display-sm-regular {
+  @include display-sm-regular;
+  margin: 0;
+}
+
+.display-sm-medium {
+  @include display-sm-medium;
+  margin: 0;
+}
+
+.display-sm-semibold {
+  @include display-sm-semibold;
+  margin: 0;
+}
+
+.display-sm-bold {
+  @include display-sm-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Display xs
+// ==========================================================================
+
+.display-xs-regular {
+  @include display-xs-regular;
+  margin: 0;
+}
+
+.display-xs-medium {
+  @include display-xs-medium;
+  margin: 0;
+}
+
+.display-xs-semibold {
+  @include display-xs-semibold;
+  margin: 0;
+}
+
+.display-xs-bold {
+  @include display-xs-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Text xl
+// ==========================================================================
+
+.text-xl-regular {
+  @include text-xl-regular;
+  margin: 0;
+}
+
+.text-xl-medium {
+  @include text-xl-medium;
+  margin: 0;
+}
+
+.text-xl-semibold {
+  @include text-xl-semibold;
+  margin: 0;
+}
+
+.text-xl-bold {
+  @include text-xl-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Text lg
+// ==========================================================================
+
+.text-lg-regular {
+  @include text-lg-regular;
+  margin: 0;
+}
+
+.text-lg-medium {
+  @include text-lg-medium;
+  margin: 0;
+}
+
+.text-lg-semibold {
+  @include text-lg-semibold;
+  margin: 0;
+}
+
+.text-lg-bold {
+  @include text-lg-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Text md
+// ==========================================================================
+
+.text-md-regular {
+  @include text-md-regular;
+  margin: 0;
+}
+
+.text-md-medium {
+  @include text-md-medium;
+  margin: 0;
+}
+
+.text-md-semibold {
+  @include text-md-semibold;
+  margin: 0;
+}
+
+.text-md-bold {
+  @include text-md-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Text sm
+// ==========================================================================
+
+.text-sm-regular {
+  @include text-sm-regular;
+  margin: 0;
+}
+
+.text-sm-medium {
+  @include text-sm-medium;
+  margin: 0;
+}
+
+.text-sm-semibold {
+  @include text-sm-semibold;
+  margin: 0;
+}
+
+.text-sm-bold {
+  @include text-sm-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Utility Classes - Text xs
+// ==========================================================================
+
+.text-xs-regular {
+  @include text-xs-regular;
+  margin: 0;
+}
+
+.text-xs-medium {
+  @include text-xs-medium;
+  margin: 0;
+}
+
+.text-xs-semibold {
+  @include text-xs-semibold;
+  margin: 0;
+}
+
+.text-xs-bold {
+  @include text-xs-bold;
+  margin: 0;
+}
+
+// ==========================================================================
+// Color Utility Classes
 // ==========================================================================
 
 .text-primary {
@@ -159,8 +715,12 @@ p {
   color: $color-grey;
 }
 
-.text-l-grey {
+.text-light-grey {
   color: $color-l-grey;
+}
+
+.text-dark-grey {
+  color: $color-d-grey;
 }
 
 .text-info {
@@ -178,6 +738,10 @@ p {
 .text-error {
   color: $color-error;
 }
+
+// ==========================================================================
+// Alignment Utility Classes
+// ==========================================================================
 
 .text-center {
   text-align: center;
