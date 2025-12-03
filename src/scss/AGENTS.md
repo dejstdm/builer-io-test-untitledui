@@ -68,6 +68,51 @@ Maintain this sequence so variables and mixins are available before they are use
 - Typography rules (font stacks, weights, heading/body scales) live in `_typography.scss`.
 - Update tokens first, then adjust component styles that consume them.
 
+## Typography Design System
+The project includes a comprehensive typography system with 11 type scales (Display 2xl through Text xs), each with 4 font weights (Regular 400, Medium 500, Semibold 600, Bold 700).
+
+### Type Scales
+- **Display 2xl**: 72px / 90px line-height / -2% letter-spacing
+- **Display xl**: 60px / 72px line-height / -2% letter-spacing
+- **Display lg**: 48px / 60px line-height / -2% letter-spacing
+- **Display md**: 36px / 44px line-height / -2% letter-spacing
+- **Display sm**: 30px / 38px line-height
+- **Display xs**: 24px / 32px line-height
+- **Text xl**: 20px / 30px line-height
+- **Text lg**: 18px / 28px line-height
+- **Text md**: 16px / 24px line-height
+- **Text sm**: 14px / 20px line-height
+- **Text xs**: 12px / 18px line-height
+
+### Usage
+Use mixins in component styles:
+```scss
+.hero__title {
+  @include display-xl-semibold;
+  color: $color-black;
+}
+```
+
+Or apply utility classes directly in markup:
+```html
+<h1 class="display-2xl-semibold">Heading</h1>
+<p class="text-lg-regular">Body text</p>
+```
+
+### Responsive Typography
+HTML heading elements (h1-h6) automatically scale up on larger screens using responsive mixins. For example, `<h1>` uses `display-xl-semibold` on mobile and `display-2xl-semibold` on desktop (768px+).
+
+### Color Utilities
+Combine typography classes with color utilities:
+```html
+<p class="text-xl-medium text-grey">Muted text</p>
+```
+
+Available color classes: `.text-primary`, `.text-secondary`, `.text-grey`, `.text-light-grey`, `.text-dark-grey`, `.text-info`, `.text-success`, `.text-warning`, `.text-error`
+
+### Design System Documentation
+View all typography scales at `/typography` route, which showcases the complete type system matching the Figma design.
+
 ## Workflow for New Production Styles
 1. Define or update the shared design system tokens in `_variables.scss`, `_typography.scss`, and related base/layout files before styling components.
 2. Create `_component-name.scss` in `src/scss/components/`.
