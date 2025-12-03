@@ -3,12 +3,36 @@
 This template delivers production-ready Astro, SCSS, and JavaScript for brand websites. Use it to assemble components that can be copied into other platforms after build. Project conventions and detailed workflows are documented in the `AGENTS.md` files throughout the repo.
 
 ## Project Structure
-- `src/components/prod/` – Production-ready Astro components
-- `src/pages/prod/` – Production routes
-- `src/layouts/ProdLayout.astro` – Shared layout that loads global styles and scripts
-- `src/scss/` – SCSS architecture (base, layout, components, utils)
-- `src/scripts/modules/` – JavaScript modules for production components
-- `public/` – Static assets copied as-is to the build output
+- `src/components/prod/` ï¿½ Production-ready Astro components
+- `src/pages/prod/` ï¿½ Production routes
+- `src/layouts/ProdLayout.astro` ï¿½ Shared layout that loads global styles and scripts
+- `src/scss/` ï¿½ SCSS architecture (base, layout, components, utils)
+- `src/scripts/modules/` ï¿½ JavaScript modules for production components
+- `public/` ï¿½ Static assets copied as-is to the build output
+
+## Typography Design System
+This project includes a comprehensive typography system based on the Inter font family:
+- **11 type scales**: Display 2xl â†’ Text xs
+- **4 font weights**: Regular (400), Medium (500), Semibold (600), Bold (700)
+- **44 total typographic styles** available as mixins and utility classes
+- **Fully responsive** with mobile-first breakpoints
+
+### Quick Start
+```html
+<!-- Use utility classes -->
+<h1 class="display-2xl-semibold">Hero Headline</h1>
+<p class="text-lg-regular text-grey">Descriptive text</p>
+```
+
+```scss
+// Or use mixins in component SCSS
+.hero__title {
+  @include display-xl-semibold;
+  color: $color-black;
+}
+```
+
+**View the complete typography system:** Navigate to `/typography` in your browser or read [TYPOGRAPHY.md](./TYPOGRAPHY.md) for full documentation.
 
 ## Commands
 | Command             | Action                                             |
