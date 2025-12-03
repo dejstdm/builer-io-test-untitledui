@@ -1,0 +1,105 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  category?: string;
+  date?: string;
+}
+
+const { title, description, category, date } = Astro.props;
+---
+
+<article class="typography-card">
+  {category && (
+    <span class="typography-card__category">{category}</span>
+  )}
+  
+  <h3 class="typography-card__title">{title}</h3>
+  
+  <p class="typography-card__description">{description}</p>
+  
+  {date && (
+    <time class="typography-card__date">{date}</time>
+  )}
+  
+  <a href="#" class="typography-card__link">
+    Read more
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.33325 8H12.6666M12.6666 8L7.99992 3.33334M12.6666 8L7.99992 12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</article>
+
+<style lang="scss">
+@use "../scss/utils/variables" as *;
+
+.typography-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: $color-white;
+  border: 1px solid $color-grey-blue;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  &__category {
+    @include text-sm-medium;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    @include display-sm-semibold;
+    color: $color-black;
+    margin: 0;
+    
+    // Responsive sizing
+    @media (min-width: $md) {
+      @include display-md-semibold;
+    }
+  }
+
+  &__description {
+    @include text-md-regular;
+    color: $color-grey;
+    margin: 0;
+    
+    @media (min-width: $md) {
+      @include text-lg-regular;
+    }
+  }
+
+  &__date {
+    @include text-sm-regular;
+    color: $color-l-grey;
+    display: block;
+    margin-top: auto;
+  }
+
+  &__link {
+    @include text-md-semibold;
+    color: $color-primary;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s ease;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      gap: 0.75rem;
+    }
+  }
+}
+</style>

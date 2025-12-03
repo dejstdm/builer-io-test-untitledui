@@ -1,0 +1,472 @@
+---
+import ProdLayout from '../layouts/ProdLayout.astro';
+import TypographyExampleCard from '../components/TypographyExampleCard.astro';
+---
+
+<ProdLayout title="Typography Examples">
+  <div class="examples-page">
+    
+    <!-- Hero Section Example -->
+    <section class="hero-example">
+      <div class="container">
+        <span class="hero-example__badge">New Feature</span>
+        <h1 class="display-2xl-bold">Typography System Examples</h1>
+        <p class="text-xl-regular text-grey">
+          Real-world examples showing how to use the typography design system in production components.
+        </p>
+        <div class="hero-example__actions">
+          <button class="btn btn--primary">Get Started</button>
+          <button class="btn btn--secondary">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Grid Example -->
+    <section class="cards-example">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="display-lg-semibold">Featured Articles</h2>
+          <p class="text-lg-regular text-grey">
+            Examples of card components using the typography system
+          </p>
+        </div>
+        
+        <div class="cards-grid">
+          <TypographyExampleCard
+            category="Design System"
+            title="Building Scalable Typography"
+            description="Learn how to create a flexible typography system that works across all screen sizes and use cases."
+            date="March 15, 2024"
+          />
+          
+          <TypographyExampleCard
+            category="Best Practices"
+            title="Type Pairing Guidelines"
+            description="Discover proven techniques for combining different type scales to create clear visual hierarchy."
+            date="March 12, 2024"
+          />
+          
+          <TypographyExampleCard
+            category="Development"
+            title="Using SCSS Mixins"
+            description="Implement typography mixins in your components for maintainable and scalable CSS architecture."
+            date="March 10, 2024"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content Example -->
+    <section class="article-example">
+      <div class="container">
+        <article class="article">
+          <div class="article__header">
+            <span class="text-sm-medium text-primary">Tutorial</span>
+            <h1 class="display-xl-semibold">Getting Started with the Typography System</h1>
+            <div class="article__meta">
+              <span class="text-sm-regular text-light-grey">By John Doe</span>
+              <span class="text-sm-regular text-light-grey">•</span>
+              <time class="text-sm-regular text-light-grey">5 min read</time>
+            </div>
+          </div>
+
+          <div class="article__content">
+            <p class="text-lg-regular">
+              This comprehensive typography system provides everything you need to create beautiful, 
+              accessible, and consistent text across your entire application. Built on the Inter font 
+              family, it offers 11 distinct type scales with 4 weight variations each.
+            </p>
+
+            <h2 class="display-md-semibold">Why Use a Type System?</h2>
+            <p class="text-md-regular">
+              A well-designed typography system ensures consistency, improves readability, and speeds up 
+              development. Instead of guessing font sizes or weights, you can choose from pre-defined 
+              scales that have been tested across multiple projects.
+            </p>
+
+            <h3 class="display-sm-semibold">Key Benefits</h3>
+            <ul class="article__list">
+              <li class="text-md-regular">Consistent visual hierarchy across all pages</li>
+              <li class="text-md-regular">Responsive typography that scales beautifully</li>
+              <li class="text-md-regular">Faster development with utility classes and mixins</li>
+              <li class="text-md-regular">Better accessibility with proper line heights and contrast</li>
+            </ul>
+
+            <blockquote class="article__quote">
+              <p class="text-lg-medium">
+                "Typography is the voice of your content. A good type system ensures that voice is 
+                clear, consistent, and accessible to everyone."
+              </p>
+              <cite class="text-sm-regular text-grey">— Design System Handbook</cite>
+            </blockquote>
+
+            <h2 class="display-md-semibold">Getting Started</h2>
+            <p class="text-md-regular">
+              You can use the typography system in two ways: utility classes for quick prototyping, 
+              or SCSS mixins for component-based styling. Both approaches give you access to the full 
+              range of type scales and weights.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing Example -->
+    <section class="pricing-example">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="display-lg-semibold">Simple, Transparent Pricing</h2>
+          <p class="text-lg-regular text-grey">
+            Choose the plan that's right for you
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="display-sm-semibold">Starter</h3>
+            <p class="text-md-regular text-grey">Perfect for individuals</p>
+            <div class="pricing-card__price">
+              <span class="display-2xl-bold text-primary">$0</span>
+              <span class="text-lg-regular text-grey">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="text-md-regular">5 projects</li>
+              <li class="text-md-regular">Basic support</li>
+              <li class="text-md-regular">1GB storage</li>
+            </ul>
+            <button class="btn btn--secondary text-md-semibold">Get Started</button>
+          </div>
+
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge text-sm-semibold">Most Popular</span>
+            <h3 class="display-sm-semibold">Professional</h3>
+            <p class="text-md-regular text-grey">For growing teams</p>
+            <div class="pricing-card__price">
+              <span class="display-2xl-bold text-primary">$29</span>
+              <span class="text-lg-regular text-grey">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="text-md-regular">Unlimited projects</li>
+              <li class="text-md-regular">Priority support</li>
+              <li class="text-md-regular">10GB storage</li>
+              <li class="text-md-regular">Advanced analytics</li>
+            </ul>
+            <button class="btn btn--primary text-md-semibold">Get Started</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="display-sm-semibold">Enterprise</h3>
+            <p class="text-md-regular text-grey">For large organizations</p>
+            <div class="pricing-card__price">
+              <span class="display-2xl-bold text-primary">$99</span>
+              <span class="text-lg-regular text-grey">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="text-md-regular">Unlimited everything</li>
+              <li class="text-md-regular">24/7 support</li>
+              <li class="text-md-regular">Unlimited storage</li>
+              <li class="text-md-regular">Custom integrations</li>
+            </ul>
+            <button class="btn btn--secondary text-md-semibold">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</ProdLayout>
+
+<style lang="scss">
+@use "../scss/utils/variables" as *;
+
+.examples-page {
+  background: $color-white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (max-width: $md) {
+    padding: 0 1.5rem;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 2rem;
+  }
+}
+
+.hero-example {
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(180deg, $color-silver 0%, $color-white 100%);
+
+  @media (max-width: $md) {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  &__badge {
+    @include text-sm-semibold;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: $color-tint-5;
+    color: $color-primary;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: $font-primary;
+
+  &--primary {
+    background: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background: $color-shade-1;
+    }
+  }
+
+  &--secondary {
+    background: $color-white;
+    color: $color-black;
+    border: 1px solid $color-grey-blue;
+
+    &:hover {
+      background: $color-silver;
+    }
+  }
+}
+
+.cards-example {
+  padding: 6rem 0;
+
+  @media (max-width: $md) {
+    padding: 4rem 0;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: $md) {
+    gap: 1.5rem;
+  }
+}
+
+.article-example {
+  padding: 6rem 0;
+  background: $color-silver;
+
+  @media (max-width: $md) {
+    padding: 4rem 0;
+  }
+}
+
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  background: $color-white;
+  padding: 4rem;
+  border-radius: 12px;
+
+  @media (max-width: $md) {
+    padding: 2rem 1.5rem;
+  }
+
+  &__header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey-blue;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  &__content {
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+
+      &:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: $color-primary;
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  &__quote {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: $color-silver;
+    border-left: 4px solid $color-primary;
+    border-radius: 4px;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    cite {
+      font-style: normal;
+    }
+  }
+}
+
+.pricing-example {
+  padding: 6rem 0;
+
+  @media (max-width: $md) {
+    padding: 4rem 0;
+  }
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: $lg) {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+.pricing-card {
+  position: relative;
+  padding: 2.5rem;
+  background: $color-white;
+  border: 2px solid $color-grey-blue;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  &--featured {
+    border-color: $color-primary;
+    box-shadow: 0 8px 16px rgba(76, 175, 79, 0.15);
+  }
+
+  &__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-primary;
+    color: $color-white;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex: 1;
+
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 1rem;
+
+      &:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: $color-primary;
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: auto;
+  }
+}
+</style>
