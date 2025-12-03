@@ -110,8 +110,19 @@ Combine typography classes with color utilities:
 
 Available color classes: `.text-primary`, `.text-secondary`, `.text-grey`, `.text-light-grey`, `.text-dark-grey`, `.text-info`, `.text-success`, `.text-warning`, `.text-error`
 
-### Design System Documentation
-View all typography scales at `/typography` route, which showcases the complete type system matching the Figma design.
+### Typography Implementation Scope
+When implementing or updating Typography from Figma, **ONLY modify these 3 files**:
+- `src/scss/base/_fonts.scss` - Font imports and @font-face declarations
+- `src/scss/base/_typography.scss` - Typography mixins, utility classes, and HTML element defaults
+- `src/scss/utils/_variables.scss` - Typography design tokens (sizes, line-heights, letter-spacing, weights)
+
+**CRITICAL: Do NOT create any of the following:**
+- Documentation/showcase pages (e.g., `/typography` route in `src/pages/`)
+- Example components (e.g., `TypographyExampleCard.astro`)
+- Separate documentation markdown files (e.g., `TYPOGRAPHY.md`, `TYPOGRAPHY-QUICK-REFERENCE.md`)
+- Any routes outside of `src/pages/prod/` (this project only ships production pages)
+
+**Why:** This project follows a production-first approach. All pages must be in `src/pages/prod/` and serve actual production content. Design system documentation pages are considered development/demo content and violate the project's core principle: "No dev or example components; only files that ship to production belong in the repository."
 
 ## Workflow for New Production Styles
 1. Define or update the shared design system tokens in `_variables.scss`, `_typography.scss`, and related base/layout files before styling components.

@@ -32,7 +32,7 @@ This project includes a comprehensive typography system based on the Inter font 
 }
 ```
 
-**View the complete typography system:** Navigate to `/typography` in your browser or read [TYPOGRAPHY.md](./TYPOGRAPHY.md) for full documentation.
+**Typography implementation files:** `src/scss/base/_fonts.scss`, `src/scss/base/_typography.scss`, and `src/scss/utils/_variables.scss`.
 
 ## Commands
 | Command             | Action                                             |
