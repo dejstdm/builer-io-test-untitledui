@@ -55,6 +55,67 @@ $container-side-margin: 144px;
 $container-gutter: 24px;
 
 // ==========================================================================
+// Typography Design Tokens
+// ==========================================================================
+
+// Font Family
+$font-primary: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+
+// Font Weights
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Display 2xl
+$display-2xl-size: 4.5rem;        // 72px
+$display-2xl-line-height: 5.625rem; // 90px
+$display-2xl-letter-spacing: -0.02em; // -2%
+
+// Display xl
+$display-xl-size: 3.75rem;        // 60px
+$display-xl-line-height: 4.5rem;  // 72px
+$display-xl-letter-spacing: -0.02em; // -2%
+
+// Display lg
+$display-lg-size: 3rem;           // 48px
+$display-lg-line-height: 3.75rem; // 60px
+$display-lg-letter-spacing: -0.02em; // -2%
+
+// Display md
+$display-md-size: 2.25rem;        // 36px
+$display-md-line-height: 2.75rem; // 44px
+$display-md-letter-spacing: -0.02em; // -2%
+
+// Display sm
+$display-sm-size: 1.875rem;       // 30px
+$display-sm-line-height: 2.375rem; // 38px
+
+// Display xs
+$display-xs-size: 1.5rem;         // 24px
+$display-xs-line-height: 2rem;    // 32px
+
+// Text xl
+$text-xl-size: 1.25rem;           // 20px
+$text-xl-line-height: 1.875rem;   // 30px
+
+// Text lg
+$text-lg-size: 1.125rem;          // 18px
+$text-lg-line-height: 1.75rem;    // 28px
+
+// Text md
+$text-md-size: 1rem;              // 16px
+$text-md-line-height: 1.5rem;     // 24px
+
+// Text sm
+$text-sm-size: 0.875rem;          // 14px
+$text-sm-line-height: 1.25rem;    // 20px
+
+// Text xs
+$text-xs-size: 0.75rem;           // 12px
+$text-xs-line-height: 1.125rem;   // 18px
+
+// ==========================================================================
 // CSS Custom Properties (For Runtime Usage)
 // ==========================================================================
 
@@ -99,6 +160,61 @@ $container-gutter: 24px;
   --color-border: #{$color-grey-blue};
   --color-background: #{$color-white};
   --color-background-light: #{$color-silver};
+
+  // Typography
+  --font-primary: #{$font-primary};
+  --font-regular: #{$font-regular};
+  --font-medium: #{$font-medium};
+  --font-semibold: #{$font-semibold};
+  --font-bold: #{$font-bold};
+
+  // Display 2xl
+  --display-2xl-size: #{$display-2xl-size};
+  --display-2xl-line-height: #{$display-2xl-line-height};
+  --display-2xl-letter-spacing: #{$display-2xl-letter-spacing};
+
+  // Display xl
+  --display-xl-size: #{$display-xl-size};
+  --display-xl-line-height: #{$display-xl-line-height};
+  --display-xl-letter-spacing: #{$display-xl-letter-spacing};
+
+  // Display lg
+  --display-lg-size: #{$display-lg-size};
+  --display-lg-line-height: #{$display-lg-line-height};
+  --display-lg-letter-spacing: #{$display-lg-letter-spacing};
+
+  // Display md
+  --display-md-size: #{$display-md-size};
+  --display-md-line-height: #{$display-md-line-height};
+  --display-md-letter-spacing: #{$display-md-letter-spacing};
+
+  // Display sm
+  --display-sm-size: #{$display-sm-size};
+  --display-sm-line-height: #{$display-sm-line-height};
+
+  // Display xs
+  --display-xs-size: #{$display-xs-size};
+  --display-xs-line-height: #{$display-xs-line-height};
+
+  // Text xl
+  --text-xl-size: #{$text-xl-size};
+  --text-xl-line-height: #{$text-xl-line-height};
+
+  // Text lg
+  --text-lg-size: #{$text-lg-size};
+  --text-lg-line-height: #{$text-lg-line-height};
+
+  // Text md
+  --text-md-size: #{$text-md-size};
+  --text-md-line-height: #{$text-md-line-height};
+
+  // Text sm
+  --text-sm-size: #{$text-sm-size};
+  --text-sm-line-height: #{$text-sm-line-height};
+
+  // Text xs
+  --text-xs-size: #{$text-xs-size};
+  --text-xs-line-height: #{$text-xs-line-height};
 
   // Container Padding (unified across all container types)
   --container-padding-x: 30px;
